@@ -5,8 +5,15 @@ class Student:
         self.id = Student.nr_studenti
         self.nume = nume
 
+    def __str__(self):
+        return f"{self.get_nume()}"
+
+    def __repr__(self):
+        return str(self)
+
     def get_nume(self):
         return self.nume
+        
     def set_nume(self, nume_nou):
         self.nume = nume_nou
 

@@ -6,6 +6,12 @@ class disciplina:
         self.id = disciplina.nr_discipline
         self.profesor = profesor
 
+    def __str__(self):
+        return f"{self.get_name()}: Prof. {self.get_profesor()}"
+
+    def __repr__(self):
+        return str(self)
+
     def get_name(self):
         return self.nume
 
